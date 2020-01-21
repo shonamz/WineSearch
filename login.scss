@@ -1,0 +1,142 @@
+$font-family: Arial, Helvetica, sans-serif;
+$font-size: 17px;
+$height: 100%;
+$width: 100%;
+$margin: 0;
+$background-color: #ddd;
+$white-smoke: #f1f1f1;
+$enable-color:#FF99ee;;
+ 
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}
+
+
+* {
+  box-sizing: border-box;
+  }
+      
+body {
+  font-family: $font-family;
+  margin: $margin;
+  
+}
+
+input[type=text], input[type=password] {
+  width: $width;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: $white-smoke;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: $background-color;
+  outline: none;
+}
+
+
+ input:enabled {
+  background: $enable-color;
+}
+
+
+input:disabled {
+
+  background: gray;
+}
+
+
+.loginbutton {
+  background-color: pink;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: $width;
+}
+
+.loginbutton:hover {
+  
+  opacity: 1;
+  background-color: $background-color;
+
+}
+
+ 
+.imgcontainer {
+  text-align: center;
+  margin-top: 12px;
+  padding-top: 32px;
+}
+
+img.avatar {
+  width: 33%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  width: 100%;
+
+ }
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+ 
+ 
+ hr {
+ @include bordered($white-smoke, 1px);
+  margin-bottom: 25px;
+}
+
+ 
+ @media screen and (min-width: 300px) { 
+
+
+ .glyphicon-large {
+    
+   font-family: $font-family;
+    margin: 12px;
+ 
+}
+
+.navbar-toggler {
+   width: 3.1em;
+   float: right;
+}
+}
+  
+//   @media screen and (min-width: 768px) { 
+
+//  .glyphicon-large {
+//     min-height: 20px;
+//     line-height: 20px;
+//     font-family: $font-family;
+//     width: auto;
+//     display: block;
+//     margin: 1.25em auto 1px;
+ 
+// }
+// }
+ 
+// /* Iphone x */
+
+//  @media only screen and (max-width: 600px) {
+
+    
+//   .glyphicon-large {
+    
+//    font-family: $font-family;
+//     margin: 5px auto 5px;
+//     text-align: center;
+//     width: $width;
+ 
+// }
+// }
+  
+
