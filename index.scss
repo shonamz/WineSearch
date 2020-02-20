@@ -3,7 +3,7 @@ $font-size: 17px;
 $height: 100%;
 $width: 100%;
 $margin: 0;
-$background-image: url("rose.jpg");
+$background-image: url("img/rose.jpg");
 $background-color: rgb(253, 226, 226);
 $white-smoke: #f1f1f1;
  
@@ -29,6 +29,8 @@ body {
   background-size: cover;
   position: relative;
   height: $height;
+  padding: 0px;
+
 }
 
 html {
@@ -45,7 +47,18 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.form  {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    text-align: center;
+    position:relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+  }
+  
 .btn {
   width: 250px;
   -webkit-transition-duration: 0.4s;
@@ -61,20 +74,6 @@ html {
   background-color: $background-color;
 }
 
-.img-text {
-  padding: 0px;
-}
-
-.form {
-  width: 40%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  text-align: center;
-  position: relative;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 form.search input[type="text"] {
   padding: 5px;
@@ -108,13 +107,3 @@ form.search::after {
   display: table;
 }
 
-// @media screen and (min-width: 768px) {
-//   .glyphicon-large {
-//     min-height: 20px;
-//     line-height: 20px;
-//     font-family: $font-family;
-//     width: auto;
-//     display: block;
-//     margin: 1.15em auto 0px;
-//    }
-// }

@@ -13,7 +13,9 @@
 </head>
 <body>
 
-    <?php include 'nav.php'; ?>
+  <  <?php
+      include 'nav.php';
+      ?>
 
 	<div class="container">
 
@@ -71,6 +73,7 @@
 		// $results = mysqli_query($mysqli , "SELECT * FROM login WHERE uname='" . $_POST["uname"] . "' and psw= '". $_POST["psw"]."'");
 	    $results = mysqli_query($mysqli , "SELECT * FROM login WHERE uname='" . $_POST["uname"] . "'");
 	    $res = mysqli_fetch_array($results);
+	    echo $res;
         $current_password = $res['psw'];
          
   		$count  = mysqli_num_rows($results);

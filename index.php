@@ -19,7 +19,11 @@
     <div class="form">
         
     <div class="img-text">
-
+      <h3>WineSearch</h3>
+      <h10>Find your Favorite Wine</h10>
+    </br>
+  </br>
+ 
       <button onclick="registerFunction()"type="button" class="btn">Register</button>
       <br />
       <br />

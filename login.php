@@ -46,7 +46,7 @@ $mysqli->close();
       <div class="container">
 
       <div class="imgcontainer">
-        <img src="rose2.jpg" alt="Avatar" class="avatar" >
+        <img src="img/rose2.jpg" alt="Avatar" class="avatar" >
       </div>
 
         <label for="uname-id"><b>Username</b></label>
